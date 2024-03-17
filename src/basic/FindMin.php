@@ -1,6 +1,7 @@
 <?php
-function findMin($array){
-  if(empty($array)){
+function findMin($array)
+{
+  if (empty($array)) {
     return null;
   }
   return min($array);

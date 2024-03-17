@@ -1,10 +1,11 @@
 <?php
 
-function inputMatrix(int $rows, int $cols): array{
+function inputMatrix(int $rows, int $cols): array
+{
   $matrix = [];
-  for ($i = 0; $i <$rows; $i++) {
+  for ($i = 0; $i < $rows; $i++) {
     $row = [];
-    for($j = 0; $j < $cols; $j++){
+    for ($j = 0; $j < $cols; $j++) {
       $row[] = readline("Enter element at position ($i, $j): ");
     }
     $matrix[] = $row;
@@ -12,9 +13,10 @@ function inputMatrix(int $rows, int $cols): array{
   return $matrix;
 }
 
-function outputMatrix(array $matrix): void {
+function outputMatrix(array $matrix): void
+{
   foreach ($matrix as $row) {
-    foreach ($row as $element){
+    foreach ($row as $element) {
       echo $element . " ";
     }
     echo PHP_EOL;
